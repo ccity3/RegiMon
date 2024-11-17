@@ -9,17 +9,17 @@
 ![1000125295.jpg](https://img.yukino.top/file/1731826036649_1000125295.jpg)
 
 ## 1.准备工作  
-1. 申请TG机器人并获取TOKEN和CHAT_ID  
+1. 申请TG机器人并获取**BOT_TOKEN**和**CHAT_ID**  
 **暂略**
 
-2. 注册免费域名查询api网站并获取token和账号id  
-这个网站提供每个月1000次的api查询，足够我们个人使用了  
+2. 注册**免费**域名查询api网站并获取token和账号id  
+这个网站提供**每个月1000次**的api查询，足够我们个人使用了  
 [网址在这里](https://jsonwhoisapi.com "点击前往注册")  
 ![aa](https://img.yukino.top/file/1731828022705_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-11-17%20140942.png)
 
 
 ## 2.开始配置cloudflare workers
-1. 创建workers项目
+1. 创建workers项目  
 首先打开我们搭大善人cloudflare
 ![2024-11-17-165245.png](https://img.yukino.top/file/1731833748994_2024-11-17-165245.png)  
 2. 编辑代码
@@ -27,7 +27,7 @@
 3. 复制代码进去并保存
 [代码在这](https://github.com/ccity3/RegiMon/blob/main/workers.js)
 ![2024-11-17_170024.png](https://img.yukino.top/file/1731834168506_2024-11-17_170024.png)
-4. 添加环境变量
+4. 添加环境变量  
    `TG_BOT_API`：你的tg_bot的token  
    `CHAT_ID`：你的账号或群组、频道的chat_id  
    `CUSTOMER_ID`：域名查询api的账号  
@@ -36,7 +36,7 @@
    ![变量](https://img.yukino.top/file/1731828028498_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-11-17%20142257.png)
    **要查询的域名像这样添加**
    ![域名添加](https://img.yukino.top/file/1731828027293_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-11-17%20143949.png)
-1. 添加定时任务
+1. 添加定时任务  
    使用cron表达式添加定时任务
    ![定时任务](https://img.yukino.top/file/1731828025618_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-11-17%20142350.png)
 
