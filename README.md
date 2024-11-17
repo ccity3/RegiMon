@@ -12,7 +12,7 @@
 1. 申请TG机器人并获取TOKEN和CHAT_ID  
 **暂略**
 
-2. 注册免费域名查询api网站并获取token和账号id
+2. 注册免费域名查询api网站并获取token和账号id  
 这个网站提供每个月1000次的api查询，足够我们个人使用了  
 [网址在这里](https://jsonwhoisapi.com "点击前往注册")  
 ![aa](https://img.yukino.top/file/1731828022705_%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202024-11-17%20140942.png)
